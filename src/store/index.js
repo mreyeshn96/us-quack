@@ -6,7 +6,7 @@ import { createStore } from 'vuex';
 /**
  * Store modules imports
  */
-import characterCreator from '@/store/modules/charactercreator/index.js';
+import characterCreator from '@/modules/CharacterCreator/store/index.js';
 
 /**
  * Create store
