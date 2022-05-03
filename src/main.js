@@ -7,7 +7,7 @@ import App from './App.vue';
 /**
  * Store import
  */
-import store from '@/store/index.js';
+import { createPinia } from 'pinia';
 
 /**
  * Importing router
@@ -25,5 +25,5 @@ import '/src/assets/css/tailwind.css';
  */
 createApp(App)
     .use(router)
-    .use(store)
+    .use(createPinia())
     .mount('#app')

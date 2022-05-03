@@ -18,7 +18,7 @@ const routes = [
         component: () =>  import( /* webpackChunkName: "App" */ '@/App.vue')
     },
     {
-        path: '/character/creator',
+        path: '/character-creator',
         ...characterCreatorRouter
     }
 ]
