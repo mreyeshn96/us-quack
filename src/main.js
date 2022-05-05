@@ -18,7 +18,7 @@ import router from '@/router/index.js';
  * CSS Imports
  */
 import '/src/assets/css/tailwind.css';
-
+import 'animate.css';
 
 /**
  * Create Vue App
