@@ -20,7 +20,7 @@ import { NConfigProvider, darkTheme } from 'naive-ui';
 
 .container-creator {
     width: 350px;
-    height: 300px;
+    height: 600px;
     margin: 3px;
 
 }

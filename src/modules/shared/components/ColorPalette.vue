@@ -4,9 +4,10 @@
             v-for="(color, index) in palette"
             :key="index"
             :color="color"
-            :isActive="color === currentHairColor"
+            :isActive="color === currentColor"
             @update:color="onUpdateColor"
         />
+        
    </div>
 </template>
 
@@ -26,11 +27,21 @@ const props = defineProps({
     palette: {
         type: Array,
         required: true
+    },
+    currentColor: {
+        type: String,
+        required: true
+    },
+    type: {
+        type: String,
+        default: 'swatch',
+        required: false
     }
 });
 
 /* Reactive Imports */
-const currentHairColor = ref('');
+const triggerColor = ref('');
+const selectedNumColor = ref('');
 
 /* Methods */
 
@@ -39,7 +50,7 @@ const currentHairColor = ref('');
  * @param {string} color
  */
 const onUpdateColor = ({ color }) => {
-    currentHairColor.value = color;
+    triggerColor.value = color;
     emits('update:color', color);
 
 };
